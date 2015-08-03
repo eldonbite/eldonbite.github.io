@@ -10,7 +10,7 @@
     </style>
   </head>
   <body>
-    <div id="content" class="content">
+    <div id="content" class="content" style="display:none;">
 
       <div class="container-fluid">
         <div class="jumbotron row">
@@ -293,6 +293,8 @@
     <script>
       $(document).ready(function() {
         $('.markdown').each(function() { $(this).html(marked($(this).html())); });
+        $('.jumbotron img').addClass('img-responsive');
+        $('#content').show();
       });
     </script>
   </body>
